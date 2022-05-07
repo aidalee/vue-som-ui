@@ -1,15 +1,20 @@
 <template>
-  <button class="my-button" @click="$emit('click', $event)">
+  <button class="som-button" @click="$emit('click', $event)">
     <slot></slot>
   </button>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
+import { defineEmits } from 'vue';
 defineEmits(['click'])
+export default {
+	name: 'SomButton',
+  props: {}
+}
 </script>
 
 <style scoped lang="less">
-.my-button {
+.som-button {
   appearance: none;
   padding: 5px 10px;
   background: lightskyblue;
