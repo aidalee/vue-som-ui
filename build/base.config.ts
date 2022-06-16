@@ -5,6 +5,9 @@ import Markdown from 'vite-plugin-md'; // 安装了比当前版本高的版本�
 
 // 文档: https://vitejs.dev/config/
 export default defineConfig({
+  define: {
+    'process.env': {}
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, '../src'),

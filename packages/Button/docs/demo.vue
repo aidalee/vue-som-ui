@@ -1,11 +1,30 @@
 <template>
-  <div>
-    <som-button @click="onClick(1)">第一个</som-button>
-    <som-button @click="onClick(2)">第二个</som-button>
-    <som-button @click="onClick(3)">第三个</som-button>
+  <div class="large">
+    <som-button large type="primary">primary</som-button>
+    <som-button large type="success">success</som-button>
+    <som-button large disabled type="secondary">secondary</som-button>
+    <som-button large type="danger">danger</som-button>
+  </div>
+  <div class="mini">
+    <som-button mini type="primary">primary</som-button>
+    <som-button mini type="success">success</som-button>
+    <som-button mini disabled type="secondary">secondary</som-button>
+    <som-button mini type="danger">danger</som-button>
   </div>
 </template>
 
 <script setup>
-const onClick = (num) => { console.log(`我是第 ${num} 个自定义按钮`) }
 </script>
+<style scoped lang="scss">
+.large {
+  width: 200px;
+  .som-button {
+    margin-bottom: 15px;
+  }
+}
+.mini {
+  .som-button {
+    margin-right: 15px;
+  }
+}
+</style>
