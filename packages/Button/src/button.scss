@@ -1,43 +1,36 @@
-@import "./mixins/variables";
-@import "./mixins//mixin";
+@import "../../styles/mixins/variables";
+@import "../../styles/mixins/mixin";
 
 .som-button {
-  // display: block;
   width: 100%;
   outline: 0;
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
   -webkit-appearance: none;
   position: relative;
-  // padding: 0 14px;
   text-align: center;
   text-decoration: none;
   border: $btn-border-width solid transparent;
   cursor: pointer;
-  @include button-size( $btn-padding-y,  $btn-padding-x,  $btn-font-size,  $border-radius);
   color: $body-color;
   overflow: hidden;
-  // height: $btn-height;
-  // background-color: aquamarine;
 }
 
-.som-button--large {
+.som-button--md {
+  @include button-size( $btn-padding-y,  $btn-padding-x,  $btn-font-size,  $border-radius);
+}
+
+.som-button--lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
 }
 
-.som-button--mini {
+.som-button--sm {
   width: auto;
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
 }
 
-// default/primary/gray/info/warn/success/error/text
-
 .som-button--primary {
   @include button-style($primary, $primary, $white)
-}
-
-.som-button--secondary {
-  @include button-style($secondary, $secondary, $white)
 }
 
 .som-button--success {
@@ -48,6 +41,14 @@
   @include button-style($error, $error, $white)
 }
 
-.btn-default {
-  @include button-style($white, $gray-400, $body-color, $white, $primary, $primary)
+.som-button--default {
+  @include button-style($gray-200, $white, $gray-800)
+}
+
+.som-button--circle {
+  border-radius: 25px;
+}
+
+.som-button--round {
+  border-radius: 5px;
 }

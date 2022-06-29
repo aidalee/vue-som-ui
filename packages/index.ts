@@ -7,14 +7,14 @@
  */
 import { App, Plugin } from 'vue';
 
-import { ButtonPlugin } from './Button';
+// import { ButtonPlugin } from './Button';
 
-const SomUiPlugin: Plugin = {
-  install(app: App) {
-    ButtonPlugin.install?.(app);
-  },
-};
+// const SomUiPlugin: Plugin = {
+//   install(app: App) {
+//     ButtonPlugin.install?.(app);
+//   },
+// };
 
-export default SomUiPlugin;
+// export default SomUiPlugin;
 
-export * from './Button'
+// export * from './Button'

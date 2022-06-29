@@ -3,13 +3,13 @@
     <som-button large type="primary">primary</som-button>
     <som-button large type="success">success</som-button>
     <som-button large disabled type="secondary">secondary</som-button>
-    <som-button large type="danger">danger</som-button>
+    <som-button large type="error">danger</som-button>
   </div>
   <div class="mini">
     <som-button mini type="primary">primary</som-button>
     <som-button mini type="success">success</som-button>
     <som-button mini disabled type="secondary">secondary</som-button>
-    <som-button mini type="danger">danger</som-button>
+    <som-button mini type="error">error</som-button>
   </div>
 </template>
 

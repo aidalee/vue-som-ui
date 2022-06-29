@@ -13,7 +13,11 @@
     "register:components": "vitepress-rc"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/throttle-debounce": "^5.0.0",
+    "lodash": "^4.17.21",
     "prismjs": "^1.28.0",
+    "throttle-debounce": "^5.0.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {

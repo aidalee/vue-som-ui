@@ -1,0 +1,38 @@
+.som-button-group {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0 16px;
+  height: 54px;
+
+  .som-button + .som-button {
+    margin-left: 8px;
+    margin-top: 0;
+  }
+
+  &.som-button-group--two {
+    .som-button:first-child {
+      flex: 1;
+    }
+    .som-button:last-child {
+      flex: 2
+    }
+  }
+  
+  &.som-button-group--three {
+    .som-button:first-child {
+      flex: 1;
+    }
+    .som-button:last-child {
+      flex: 3
+    }
+  }
+
+  &.som-button-group--right {
+    justify-content: flex-end;
+    .som-button {
+      width: auto;
+    }
+  }
+
+}
